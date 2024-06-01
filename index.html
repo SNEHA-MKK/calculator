@@ -13,39 +13,43 @@
         <form action="">
             <p>CASIO</p>
 
-            <input type="text" id="screen" readonly placeholder="0">  
-            <!-- readornly-so user cant type -->
+            <input type="text" id="screen" readonly placeholder="0" >  
+            <!-- readornly-so user cant type in the input field
+
+            text-align:right -> to display the numbers from the right side(to start from the rigth) as in seen in the calculator, if required
+             -->
+            <br>
+            <input class="button clear ac" type="button" value="AC" onclick="clearScreen()">
+            <input class="button " type="button" value="C" onclick="back()">
+            <input class="button number" type="button" value="." onclick="btnClick(value)">
+            <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+
             <br>
             <input class="button number" type="button" value="7" onclick="btnClick('7')">
             <input class="button number" type="button" value="8" onclick="btnClick('8')">
             <input class="button number" type="button" value="9" onclick="btnClick(value)">
-            <input class="button operator" type="button" value="/" onclick="btnClick(value)">
-
-
+            <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+           
 
             <br>
             <input class="button number" type="button" value="4" onclick="btnClick(value)">
             <input class="button number" type="button" value="5" onclick="btnClick(value)">
             <input class="button number" type="button" value="6" onclick="btnClick(value)">
-            <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="-" onclick="btnClick(value)">
+            
 
             <br>
+            
             <input class="button number" type="button" value="1" onclick="btnClick(value)">
             <input class="button number" type="button" value="2" onclick="btnClick(value)">
             <input class="button number" type="button" value="3" onclick="btnClick(value)">
             <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+            
 
             <br>
-            
             <input class="button number" type="button" value="0" onclick="btnClick(value)">
             <input class="button result" type="button" value="="  onclick="findResult()">
-            <input class="button clear ac" type="button" value="AC" onclick="clearScreen()">
-            <!-- <a href=""><i class="fa-solid fa-delete-left button clear icon"></i></a> -->
-            <input class="button operator" type="button" value="-" onclick="btnClick(value)">
-
-            <br>
-            <input class="button number" type="button" value="." onclick="btnClick(value)">
-            <input class="button " type="button" value="C" onclick="back()">
+           
         </form>  
 
 
